@@ -7,12 +7,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/above-the-fold.css"/>
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-
 </head>
 <body>
 
@@ -133,7 +130,7 @@
 							</li>
 						</ul>
 
-						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="https://www.youtube.com/watch?v=sCX_YMPuJGA?autoplay=1&showinfo=0">
+						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="https://www.youtube-nocookie.com/embed/sCX_YMPuJGA">
 							<i class="play_icon"></i>
 							<span>About Video</span>
 						</a>
@@ -285,10 +282,39 @@
 	</footer>
 	<!--  End Footer Section  -->
 
+
+
+
+
+
 	<!-- Javascript Files -->
+	<script type="text/javascript">
+		const loadStyleSheet = src => {
+			if(document.createStylesheet) {
+				document.createStylesheet(src)
+			}
+			else {
+				const stylesheet = document.createElement('link');
+				stylesheet.rel = 'stylesheet';
+				stylesheet.type = 'text/css';
+				stylesheet.href = src;
+
+				document.getElementsByTagName('head')[0]
+						.appendChild(stylesheet);
+			}
+		}
+
+		window.onload = function() {
+			loadStyleSheet('css/owl.css');
+			loadStyleSheet('css/main.css');
+		}
+	</script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
 	<!-- End of Javascript Files -->
+
+
+
 </body>
 </html>
