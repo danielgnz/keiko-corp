@@ -201,8 +201,6 @@ header .social li:first-child{
 	position: relative;
 	width: 100%;
 	height: 560px;
-	background: url('../img/hero.jpg') no-repeat fixed center center;
-	background-size: cover;
 }
 
 .hero .caption{
@@ -921,5 +919,37 @@ footer .copyright a{
 
 	.sub_box #mc_submit{
 		margin-top: 20px;
+	}
+}
+
+
+
+	/*		Responsive Hero Image 		*/
+
+@media only screen and (max-width: 767px) {
+	.hero {
+		background: url('../img/hero-small-c.jpg') no-repeat fixed center center;
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.hero {
+		background: url('../img/hero-1025-c.jpg') no-repeat fixed center center;
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px) {
+	.hero {
+		background: url('../img/hero-1366-c.jpg') no-repeat fixed center center;
+		background-size: cover;
+	}	
+}
+
+@media only screen and (min-width: 1366px) {
+	.hero {
+		background: url('../img/hero-1920-c.jpg') no-repeat fixed center center;
+		background-size: cover;
 	}
 }
