@@ -1,7 +1,7 @@
 # Keiko Corp Website Performance Optimization
 I have improved the KC's website performance on mobile and desktop by **23%**
 
-The original website received a score of 76th perc
+The original website got a score of 76 on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/), and [I managed to make it 99 out of 100](https://imgur.com/a/QaV5YJ).
 
 ## Table of Contents
 
